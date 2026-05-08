@@ -22,17 +22,17 @@ The main objectives of this project are:
 
 4. System Requirements
 
-=>Hardware Requirements
+  =>Hardware Requirements
 
-* Processor: Minimum Intel i3 or equivalent
-* RAM: 4 GB or above
-* Storage: 500 MB free space
+  * Processor: Minimum Intel i3 or equivalent
+  * RAM: 4 GB or above
+  * Storage: 500 MB free space
 
-=>Software Requirements
+  =>Software Requirements
 
-* Java Development Kit (JDK 8 or above)
-* Operating System: Windows / Linux / macOS
-* IDE: Eclipse / IntelliJ IDEA / VS Code
+  * Java Development Kit (JDK 8 or above)
+  * Operating System: Windows / Linux / macOS
+  * IDE: Eclipse / IntelliJ IDEA / VS Code
 
 5. System Design
 
