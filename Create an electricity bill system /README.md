@@ -2,16 +2,16 @@ ELECTRICITY BILL SYSTEM – PROJECT REPORT
 
 1. Abstract
 
-The Electricity Bill System is a Java-based application developed to automate the process of calculating electricity bills for customers based on their unit consumption. The system uses slab-based billing logic to ensure accurate and fair calculation. It reduces manual errors, saves time, and provides a simple interface for users to input data and generate bills efficiently.
+  The Electricity Bill System is a Java-based application developed to automate the process of calculating electricity bills for          customers based on their unit consumption. The system uses slab-based billing logic to ensure accurate and fair calculation. It         reduces   manual errors, saves time, and provides a simple interface for users to input data and generate bills efficiently.
 
 2. Objective
 
-The main objectives of this project are:
+  The main objectives of this project are:
 
-* To design a system for calculating electricity bills automatically
-* To implement slab-based billing logic using Java
-* To minimize human errors in bill calculation
-* To provide a user-friendly interface for data entry and output
+  * To design a system for calculating electricity bills automatically
+  * To implement slab-based billing logic using Java
+  * To minimize human errors in bill calculation
+  * To provide a user-friendly interface for data entry and output
 
 3. Technologies Used
 
@@ -68,6 +68,7 @@ The main objectives of this project are:
 7. Source Code
 
   java id="a9f23"
+  
   import java.util.Scanner;
   class ElectricityBill {
       String customerName;
@@ -105,13 +106,13 @@ The main objectives of this project are:
 
 8. Sample Output
 
-Enter Customer Name: Harshitha
-Enter Units Consumed: 350
+  Enter Customer Name: Harshitha
+  Enter Units Consumed: 350
 
-Electricity Bill:
-Customer Name : Harshitha
-Units Consumed: 350
-Total Bill    : Rs. 1150.0
+  Electricity Bill:
+  Customer Name : Harshitha
+  Units Consumed: 350
+  Total Bill    : Rs. 1150.0
 
 9. Advantages
 
@@ -136,7 +137,7 @@ Total Bill    : Rs. 1150.0
 
 12. Conclusion
 
-The Electricity Bill System successfully demonstrates how Java can be used to automate real-world problems. The project highlights the use of object-oriented programming and conditional logic to build an efficient and scalable system. With further enhancements, it can be developed into a full-fledged billing application.
+  The Electricity Bill System successfully demonstrates how Java can be used to automate real-world problems. The project highlights      the use of object-oriented programming and conditional logic to build an efficient and scalable system. With further enhancements, it   can be developed into a full-fledged billing application.
 
 13. References
 
