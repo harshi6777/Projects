@@ -36,84 +36,74 @@ The main objectives of this project are:
 
 5. System Design
 
-Input:
+  Input:
 
-* Customer Name
-* Units Consumed
+  * Customer Name
+  * Units Consumed
 
-Process:
+  Process:
 
-* Apply slab-based billing logic:
+  * Apply slab-based billing logic:
+    * 0–100 units → ₹1.5 per unit
+    * 101–300 units → ₹2.5 per unit
+    * Above 300 units → ₹4 per unit
 
-  * 0–100 units → ₹1.5 per unit
-  * 101–300 units → ₹2.5 per unit
-  * Above 300 units → ₹4 per unit
+  Output:
 
-Output:
-
-* Customer details
-* Units consumed
-* Total bill amount
+  * Customer details
+  * Units consumed
+  * Total bill amount
 
 6. Algorithm
 
-1. Start
-2. Input customer name
-3. Input units consumed
-4. If units ≤ 100 → bill = units × 1.5
-5. Else if units ≤ 300 → bill = (100 × 1.5) + (remaining × 2.5)
-6. Else → bill = (100 × 1.5) + (200 × 2.5) + (remaining × 4)
-7. Display bill details
-8. End
+  1. Start
+  2. Input customer name
+  3. Input units consumed
+  4. If units ≤ 100 → bill = units × 1.5
+  5. Else if units ≤ 300 → bill = (100 × 1.5) + (remaining × 2.5)
+  6. Else → bill = (100 × 1.5) + (200 × 2.5) + (remaining × 4)
+  7. Display bill details
+  8. End
 
 7. Source Code
 
-java id="a9f23"
-import java.util.Scanner;
-
-class ElectricityBill {
-
-    String customerName;
-    int unitsConsumed;
-    double billAmount;
-
-    void calculateBill() {
-        if (unitsConsumed <= 100) {
-            billAmount = unitsConsumed * 1.5;
-        } 
-        else if (unitsConsumed <= 300) {
-            billAmount = (100 * 1.5) + (unitsConsumed - 100) * 2.5;
-        } 
-        else {
-            billAmount = (100 * 1.5) + (200 * 2.5) + (unitsConsumed - 300) * 4.0;
-        }
-    }
-
-    void displayBill() {
-        System.out.println("Electricity Bill:");
-        System.out.println("Customer Name : " + customerName);
-        System.out.println("Units Consumed: " + unitsConsumed);
-        System.out.println("Total Bill    : Rs. " + billAmount);
-    }
-
-    public static void main(String[] args) {
+  java id="a9f23"
+  import java.util.Scanner;
+  class ElectricityBill {
+      String customerName;
+      int unitsConsumed;
+      double billAmount;
+      void calculateBill() {
+          if (unitsConsumed <= 100) {
+              billAmount = unitsConsumed * 1.5;
+          } 
+          else if (unitsConsumed <= 300) {
+              billAmount = (100 * 1.5) + (unitsConsumed - 100) * 2.5;
+          } 
+          else {
+              billAmount = (100 * 1.5) + (200 * 2.5) + (unitsConsumed - 300) * 4.0;
+          }
+      }
+      void displayBill() {
+          System.out.println("Electricity Bill:");
+          System.out.println("Customer Name : " + customerName);
+          System.out.println("Units Consumed: " + unitsConsumed);
+          System.out.println("Total Bill    : Rs. " + billAmount);
+      }
+      public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ElectricityBill eb = new ElectricityBill();
-
         System.out.print("Enter Customer Name: ");
         eb.customerName = sc.nextLine();
-
         System.out.print("Enter Units Consumed: ");
         eb.unitsConsumed = sc.nextInt();
-
         eb.calculateBill();
         eb.displayBill();
-
         sc.close();
-    }
-}
+      }
+  }
 
-8. 📊 Sample Output
+8. Sample Output
 
 Enter Customer Name: Harshitha
 Enter Units Consumed: 350
@@ -153,8 +143,3 @@ The Electricity Bill System successfully demonstrates how Java can be used to au
 * Java Programming by Herbert Schildt
 * Oracle Java Documentation
 * Online Java Tutorials
-If you want, I can next:
-
-* Convert this into a **Word/PDF file (ready to submit)**
-* Add **flowchart + diagrams** (important for marks)
-* Upgrade code to **GUI version (high scoring project)**
